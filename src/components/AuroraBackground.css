@@ -1,0 +1,55 @@
+/* 配色 #5EE790、#5EE7C1、#089291 */
+.aurora-bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0a0f14 0%, #0d1419 50%, #0a0f14 100%);
+  z-index: 0;
+}
+
+.aurora-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: aurora-float 20s ease-in-out infinite;
+}
+
+.aurora-shape-1 {
+  width: 80vmax;
+  height: 60vmax;
+  background: radial-gradient(circle, #5EE790 0%, transparent 70%);
+  top: -20%;
+  left: -20%;
+  animation-delay: 0s;
+}
+
+.aurora-shape-2 {
+  width: 70vmax;
+  height: 70vmax;
+  background: radial-gradient(circle, #5EE7C1 0%, transparent 70%);
+  top: 30%;
+  right: -30%;
+  animation-delay: -7s;
+}
+
+.aurora-shape-3 {
+  width: 60vmax;
+  height: 80vmax;
+  background: radial-gradient(circle, #089291 0%, transparent 70%);
+  bottom: -30%;
+  left: 20%;
+  animation-delay: -14s;
+}
+
+@keyframes aurora-float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(5%, -5%) scale(1.05);
+  }
+  66% {
+    transform: translate(-5%, 5%) scale(0.95);
+  }
+}

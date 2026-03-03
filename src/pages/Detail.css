@@ -1,0 +1,80 @@
+.detail-page {
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem;
+  padding-top: 80px;
+  background-color: #05000F;
+}
+
+.detail-main {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.detail-back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #5EE7C1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.detail-back:hover {
+  color: #5EE790;
+}
+
+.detail-article {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.detail-header {
+  margin-bottom: 2rem;
+}
+
+.detail-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+}
+
+.detail-meta {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.detail-hero {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 2/1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.detail-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-body {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+.detail-body p {
+  margin: 0 0 1rem 0;
+}
