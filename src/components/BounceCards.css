@@ -7,16 +7,18 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 200px;
-  height: 280px;
-  margin-left: -100px;
-  margin-top: -140px;
+  width: 220px;
+  height: 220px;
+  margin-left: -110px;
+  margin-top: -110px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   text-decoration: none;
   display: block;
   will-change: transform;
+  box-sizing: border-box;
+  border: 8px solid #ffffff;
 }
 
 .bounce-card-image {
@@ -25,4 +27,5 @@
   object-fit: cover;
   display: block;
   pointer-events: none;
+  filter: grayscale(1);
 }

@@ -2,7 +2,7 @@
   position: relative;
   min-height: 100vh;
   padding: 2rem;
-  padding-top: 80px;
+  padding-top: 184px;
 }
 
 .index-main {
@@ -20,12 +20,14 @@
 }
 
 .index-title {
-  font-size: 120px;
+  font-size: 150px;
   font-weight: 700;
   margin: 0;
   letter-spacing: -0.02em;
   text-align: center;
   line-height: 1.1;
+  font-family: Arial, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: #ffffff;
 }
 
 .index-cards {

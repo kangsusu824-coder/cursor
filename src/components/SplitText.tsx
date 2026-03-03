@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 
-const COLORS = ['#5EE790', '#5EE7C1', '#089291'];
+const COLORS = ['#FFFFFF'];
 
 type SplitTextProps = {
   text?: string;
@@ -47,7 +47,7 @@ export function SplitText({
           <span
             key={i}
             className="char"
-            style={{ color: COLORS[i % COLORS.length], display: 'inline-block' }}
+            style={{ color: COLORS[0], display: 'inline-block' }}
           >
             {char}
           </span>

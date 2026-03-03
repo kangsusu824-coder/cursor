@@ -10,27 +10,20 @@ export function Detail() {
       <Nav />
       <main className="detail-main">
         <Link to="/" className="detail-back">
-          ← 返回作品集
+          ← 返回
         </Link>
         <article className="detail-article">
           <header className="detail-header">
             <h1 className="detail-title">作品 {id ?? '—'}</h1>
-            <p className="detail-meta">详情页（可根据 Figma 设计稿继续还原）</p>
+            <ul className="detail-meta-list">
+              <li>类型：web</li>
+              <li>角色：独立负责</li>
+              <li>年份：2025</li>
+            </ul>
           </header>
-          <div className="detail-content">
-            <div className="detail-hero">
-              <img
-                src={`https://picsum.photos/1200/600?random=${id ?? '0'}`}
-                alt="作品封面"
-                className="detail-hero-image"
-              />
-            </div>
-            <div className="detail-body">
-              <p>
-                此处为作品详情正文区域。设计稿链接：Figma node-id=3-15。
-                当 Figma 接口权限可用时，可再次拉取设计数据精确还原布局与样式。
-              </p>
-            </div>
+          <div className="detail-layout">
+            <section className="detail-block detail-block-top" />
+            <section className="detail-block detail-block-bottom" />
           </div>
         </article>
       </main>
