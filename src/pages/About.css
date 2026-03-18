@@ -41,24 +41,6 @@
   background: rgba(255, 255, 255, 0.06);
 }
 
-.about-cutout {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 18px;
-  outline: 5px solid rgba(255, 255, 255, 0.9);
-  outline-offset: 4px;
-  filter: grayscale(0.15) contrast(1.05);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-  opacity: 0.95;
-}
-
-.about-cutout-1 { left: 58%; top: 5%; transform: rotate(10deg); }
-.about-cutout-2 { left: 72%; top: 20%; transform: rotate(-12deg); width: 140px; height: 220px; }
-.about-cutout-3 { left: 48%; top: 55%; transform: rotate(6deg); width: 120px; height: 180px; }
-.about-cutout-4 { left: 28%; top: 58%; transform: rotate(-8deg); width: 180px; height: 140px; }
-
 .about-tags {
   position: absolute;
   inset: 0;
@@ -87,6 +69,5 @@
 
 @media (max-width: 720px) {
   .about-person { width: 210px; height: 290px; }
-  .about-cutout { display: none; }
   .about-tag { font-size: 12px; padding: 8px 14px; }
 }

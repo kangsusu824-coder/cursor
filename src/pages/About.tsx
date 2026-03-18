@@ -10,11 +10,7 @@ export function About() {
       <main className="about-main">
         <section className="about-stage" aria-label="关于我">
           <div className="about-collage">
-            <img className="about-person" src="/images/person.png" alt="个人照片" />
-            <img className="about-cutout about-cutout-1" src="/images/person.png" alt="" />
-            <img className="about-cutout about-cutout-2" src="/images/person.png" alt="" />
-            <img className="about-cutout about-cutout-3" src="/images/person.png" alt="" />
-            <img className="about-cutout about-cutout-4" src="/images/person.png" alt="" />
+            <img className="about-person" src="/images/aboutme.png" alt="关于我" />
           </div>
 
           <div className="about-tags" aria-hidden>
