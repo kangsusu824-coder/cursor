@@ -116,3 +116,4 @@ npm preview
 
 - **v1.0.0**（2026-03-03）：初始可用版本，包含首页 OGL Aurora 背景 + Works 动效 + BounceCards 卡片 + 顶部导航，以及详情页（背景色 #05000F）。
 - **v1.1.0**（2026-03-03）：首页 Works 样式更新（150px、Arial、白色）、Aurora 配色改为 #3A29FF/#FF94B4/#FF3232，BounceCards 改为 5 个 1:1 黑白卡片带 8px 白描边，导航选中态样式调整，详情页布局按新设计简化。
+- **v1.3.0**（2026-03-18）：详情页改为使用 `public/images/work/detail/{1..5}` 的真实图片并按数字顺序渲染；导航头像替换为 `public/images/person.png`；新增「关于我」页面拼贴与标签样式。

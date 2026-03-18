@@ -5,11 +5,11 @@ import { Nav } from '../components/Nav';
 import './Index.css';
 
 const WORKS: BounceCardItem[] = [
-  { image: 'https://picsum.photos/800/800?grayscale&random=1', href: '/work/1', title: '项目一' },
-  { image: 'https://picsum.photos/800/800?grayscale&random=2', href: '/work/2', title: '项目二' },
-  { image: 'https://picsum.photos/800/800?grayscale&random=3', href: '/work/3', title: '项目三' },
-  { image: 'https://picsum.photos/800/800?grayscale&random=4', href: '/work/4', title: '项目四' },
-  { image: 'https://picsum.photos/800/800?grayscale&random=5', href: '/work/5', title: '项目五' },
+  { image: '/images/work/1.png', href: '/work/1', title: '项目一' },
+  { image: '/images/work/2.png', href: '/work/2', title: '项目二' },
+  { image: '/images/work/3.png', href: '/work/3', title: '项目三' },
+  { image: '/images/work/4.png', href: '/work/4', title: '项目四' },
+  { image: '/images/work/5.png', href: '/work/5', title: '项目五' },
 ];
 
 const CARD_TRANSFORMS = [
@@ -24,7 +24,7 @@ export function Index() {
   return (
     <div className="page index-page">
       <Aurora
-        colorStops={['#3A29FF', '#FF94B4', '#FF3232']}
+        colorStops={['#7CFF67', '#B19EEF', '#5227FF']}
         amplitude={1}
         blend={0.5}
         speed={1}
