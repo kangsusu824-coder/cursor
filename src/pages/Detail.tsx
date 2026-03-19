@@ -8,6 +8,49 @@ export function Detail() {
   const workId = id ?? '1';
   const images = workDetailImages[workId] ?? [];
 
+  const detailMap: Record<
+    string,
+    {
+      title: string;
+      type: string;
+      role: string;
+      year: string;
+    }
+  > = {
+    '1': {
+      title: 'BOSS直聘校招平台',
+      type: 'web',
+      role: '独立负责',
+      year: '2025',
+    },
+    '2': {
+      title: '登录页视觉升级',
+      type: 'web',
+      role: '独立负责',
+      year: '2022',
+    },
+    '3': {
+      title: 'AI面试',
+      type: '移动端',
+      role: '独立负责',
+      year: '2024',
+    },
+    '4': {
+      title: '校招官网',
+      type: 'web',
+      role: '独立负责',
+      year: '2025',
+    },
+    '5': {
+      title: '团队提效',
+      type: 'web',
+      role: '跨团队合作',
+      year: '2023',
+    },
+  };
+
+  const detail = detailMap[workId] ?? detailMap['1'];
+
   return (
     <div className="page detail-page">
       <Nav solidOnScroll />
@@ -17,11 +60,11 @@ export function Detail() {
         </Link>
         <article className="detail-article">
           <header className="detail-header">
-            <h1 className="detail-title">作品 {workId}</h1>
+            <h1 className="detail-title">{detail.title}</h1>
             <ul className="detail-meta-list">
-              <li>类型：web</li>
-              <li>角色：独立负责</li>
-              <li>年份：2025</li>
+              <li>类型：{detail.type}</li>
+              <li>角色：{detail.role}</li>
+              <li>年份：{detail.year}</li>
             </ul>
           </header>
           <div className="detail-layout">
